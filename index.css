@@ -1,32 +1,33 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #040D12; /* Dark blue background */
     font-family: "Exo 2", sans-serif;
     height: 100vh;
+    color: #93B1A6; /* Pale green text color */
 }
 
 body {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: wheat;
+    align-items: center;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    color: white;
-    width: 500px;
-    border-radius: 3px;
-    background-image: url("https://images.unsplash.com/photo-1601370690183-1c7796ecec61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    color: #93B1A6; /* Pale green text color */
+    background-color: #183D3D; /* Dark green background */
+    border-radius: 4px;
+    width: 600px;
 }
 
 button {
-    background-color: #FFF100;
+    background-color: #5C8374; /* Olive green button color */
     cursor: pointer;
     border: none;
+    color: #040D12; /* Dark blue text color */
 }
 
 button#new-deck {
@@ -40,8 +41,15 @@ button.draw {
     align-self: stretch;
 }
 
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-block: 20px;
+}
+
 div.card-slot {
-    border: 1px solid black;
+    border: 1px solid #040D12; /* Dark blue border */
     border-radius: 5px;
     height: 120px;
     width: calc(120px * 5 / 7);
@@ -58,13 +66,19 @@ img.card {
 
 div.top {
     display: flex;
-    align-items: flex-start;
-    align-self: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
 }
 
 div.top > p {
     margin: 0;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+div.top button {
+    margin-left: 20px;
 }
 
 button:disabled {
